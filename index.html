@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">My Portfolio.</a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#project" class="menu-btn">Projects</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Mahamed Ali</div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title"><span class="about-me"></span></h2>
+                <div class="about-content">
+                    <div class="column right">
+                        <div class="text">I'm Mahamed and I'm a <span class="typing-2"></span></div>
+                        <p>I am a recent programmer graduate with a vast array of knowledge in front-end and back-end languages, frameworks, and databases. My objective is to become a great computer programmer and to contribute to the industry to the best of my abilities. I am dedicated to perfecting my craft by learning from more experienced programmer and making strides to learn all that I can about development.</p>
+                        <a href="Mahamed Ali Resume.pdf">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PROJECT -->
+        <section class="project" id="project">
+            <div class="max-width">
+                <h2 class="title"><span class="projects"></span></h2>
+                <div class="serv-content">
+                    <button class="tablink" onclick="opens('projOne', this)" id="defaultOpen">Web Projects</button>
+                    <button class="tablink" onclick="opens('projTwo', this)" id="defaultOpen">Software Projects</button>
+                    
+                    <div id = "projOne" class="tabs" style="display:block">
+                        <br>
+                        <div class="projtitles">
+                            Restaurant Landing Page
+                        </div>
+                        
+                        <div class="projdesc">
+                            <ul>
+                                <li>A Landing Page of a Restaurant built with HTML and CSS</li>
+                            </ul>
+                        </div>
+
+                        <div class="tools">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/alimaxx17/Restaurant-Landing-Page">Source Code</a>
+                        </div>
+
+                        <div class="projtitles">
+                            Movie App
+                        </div>
+                        
+                        <div class="projdesc">
+                            <ul>
+                                <li>You can see the home page of the search page on your browser where you can search any movies.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tools">
+                            <button>JavaScript</button>
+                            <button>CSS</button>
+                            <button>HTML</button>   
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/alimaxx17/Movie-App">Source Code</a>
+                        </div>
+                        
+                        <div class="projtitles">
+                            E-Commerce Site
+                        </div>
+
+                        <div class="projdesc">
+                            <ul>
+                                <li>An E-Commerce project for an Amazon-like website with database and admin</li>
+                            </ul>
+                        </div>
+
+                        <div class="tools">
+                            <button>PHP</button>
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>MySQL</button>
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/alimaxx17/E-Commerce-Site">Source Code</a>
+                        </div>
+                    
+                        <div class="projtitles">
+                            Call Center Landing Page
+                        </div>
+                        
+                        <div class="projdesc">
+                            <ul>
+                                <li>A Call Center landing page using Bootstrap</li>
+                            </ul>
+                        <br>
+                        </div>
+
+                        <div class="tools">
+                            <button>Bootstrap</button>
+                            <button>CSS</button>  
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/alimaxx17/Call-Center-Landing-Page">Source Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Second Tab -->
+                    <div class="tabs" id="projTwo" style="display:none">
+                        <br>
+                        <div class="projtitles">
+                            Banking System 
+                        </div>
+                        
+                        <div class="projdesc">
+                            <ul>
+                                <li>A simple banking system built using Java.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tools">
+                            <button>Java</button>
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/alimaxx17/Banking-System">Source Code</a>
+                        </div>
+                        <br>
+
+                        <div class="projtitles">
+                            Zodiac Sign 
+                        </div>
+                                                
+                        <div class="projdesc">
+                        <ul>
+                            <li>A Zodiac Sign Calculator that utilizes Python</li>
+                        </ul>
+                        </div>
+
+                        <div class="tools">
+                            <button>Python</button>
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/alimaxx17/Zodiac-Sign">Source Code</a>
+                        </div>
+                        
+                        <div class="projtitles">
+                            Hospital Management System
+                        </div>
+                        
+                        <div class="projdesc">
+                            <ul>
+                                <li>A Hospital Database System use to search, add or book patients using JSP and Servlet</li>
+                            </ul>
+                        </div>
+
+                        <div class="tools">
+                            <button>JSP</button>
+                            <button>Servlet</button>
+                        </div>
+
+                        <div class="links">
+                            <a href="https://github.com/alimaxx17/Hospital-Management-System">Source Code</a>
+                        </div>
+
+                        <div class="projtitles">
+                            Inventory System
+                        </div>
+
+                        <div class="projdesc">
+                        <ul>
+                            <li>An Inventory System where the admin can edit and edit products</li>
+                        </ul>
+                        </div>
+                        <div class="tools">
+                            <button>PHP</button>
+                            <button>MySQL</button>
+                            <button>CSS</button>
+                        </div>
+                        <div class="links">
+                        <a href="https://github.com/alimaxx17/Inventory-System">Source Code</a> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title"><span class="footer"></span></h2>
+            <div class="contact-content">
+                <div class="column">
+                    <div class="links-container">
+                        <a href="https://www.linkedin.com/in/mahamed-ali-3a453a19b/" target="_blank" id="profile-link">LinkedIn</a>
+                        <a href="https://github.com/alimaxx17" target="_blank" class="logo">GitHub</a>
+                        <a href="mailto:postlarv@hotmail.com" target="_blank" class="logo">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>Written and coded by Mahamed Ali</footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
